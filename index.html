@@ -4,15 +4,150 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Joey</title>
   </head>
+
   <body>
-  	<h1>Hello, Code School!</h1>
-  	<ul>
-  	    <li>PHP</li>
-  	    <li>Python</li>
-  	    <li>SQL</li>
-  	</ul>
+  	
+    <!-- Navigation  -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="#">Made by Joey</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contactForm">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation -->
+
+      
+
+    <!-- content -->
+    <div class="container">
+    <!-- Bio -->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 bioContent">
+          <img id="me" src="http://images.fasocdn.com/64433/2256853org.jpg" alt="" />
+          
+    <!-- Social Media -->
+          <span id="socialIcons">
+            <a href="https://www.facebook.com/joey.garcia.1422" class="social" target="_blank"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <a href="https://www.linkedin.com/in/joey-garcia/" class="social" target="_blank"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
+            <a href="https://www.instagram.com/jmg0343/" class="social" target="_blank"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+            </span>
+    <!-- End Social Media -->
+          
+          <p class="bioTitle" id="about">Who Is This Handsome Fellow?</p>
+        <hr class="separator" />
+          <p class="bio">Full stack web developer whose experience includes, but is not limited to, the LAMP stack, JavaScript, HTML, and CSS. <br /><br />Driven by a passion for finding creative solutions to complex problems through the use of of critical thinking, teamwork, and energy drinks.</p>
+        
+        <hr class="separator" />
+          <p class="tag">Web Dev - Funny Jokes - Mediocre Puns</p>
+        </div>
+        
+        <div class="col-sm-1"></div>
+      </div>
+    <!--  End Bio -->
+      
+    <!--  Portfolio -->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 portfolioContent">
+          <p class="portfolioTitle" id="portfolio">Portfolio</p>
+      <hr class="portfolioSeparator" />
+          
+    <!--      Row 1 -->
+          <div class='row projectContent'>
+            <div class='col-sm-4'>
+              <a href="#"><img id="project1" src="http://cdn1.indie88cdn.com/wp-content/uploads/2016/01/Indie88-Concerts-Header-1190.jpg" alt="" />
+              <p class="projectTitle">Project 1</p></a>
+            </div>
+            <div class='col-sm-4'>
+              <a href="#"><img id="project2" src="http://www.personal.psu.edu/users/n/y/nys5290/Project-Image.jpg" alt="" />
+              <p class="projectTitle">Project 2</p></a>
+            </div>
+            <div class='col-sm-4'>
+              <a href="#"><img id="project3" src="http://moodle.hust.edu.vn/pluginfile.php/5986/course/overviewfiles/Project-Management.jpg" alt="" />
+              <p class="projectTitle">Project 3</p></a>
+            </div>
+          </div>
+          
+    <!--      Row 2 -->
+          <div class='row projectContent'>
+            <div class='col-sm-4'>
+              <a href="#"><img id="project1" src="http://cdn1.indie88cdn.com/wp-content/uploads/2016/01/Indie88-Concerts-Header-1190.jpg" alt="" />
+              <p class="projectTitle">Project 1</p></a>
+            </div>
+            <div class='col-sm-4'>
+              <a href="#"><img id="project2" src="http://www.personal.psu.edu/users/n/y/nys5290/Project-Image.jpg" alt="" />
+              <p class="projectTitle">Project 2</p></a>
+            </div>
+            <div class='col-sm-4'>
+              <a href="#"><img id="project3" src="http://moodle.hust.edu.vn/pluginfile.php/5986/course/overviewfiles/Project-Management.jpg" alt="" />
+              <p class="projectTitle">Project 3</p></a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+      
+    <!-- End Portfolio -->
+      
+    <!--  Contact -->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 contactSection">      
+    <!--    Form -->
+          <legend class="text-center hitMeUp" id="contactForm">Contact Me</legend>
+          <form class="contactForm" method="POST" action="http://formspree.io/jmgarcia0343@gmail.com">
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="email" name="email" placeholder="Your Email" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="message">
+                Your Message
+              </label>
+              <div class="col-sm-10">
+                <textarea class="form-control" name="message" placeholder="Questions, comments, or verbal abuse" id="" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="form-group text-center">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary btn-lg" id="submitButton">Submit</button>
+              </div>
+            </div>
+          </form>
+    <!--    End Form -->    
+        </div>    
+      </div>
+    </div>
+    <footer class="footer">
+      <h3>No stealing, please.</h3>
+    </footer>
+
   </body>
 </html>
